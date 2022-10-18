@@ -10,8 +10,7 @@
     "clear": "rimraf 'packages/*/{lib,node_modules}' && rimraf node_modules",
     "changeset": "changeset",
     "changeset-version": "changeset version",
-    "commit": "cz",
-    "postinstall": "husky install"
+    "prepare": "husky install"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -44,7 +43,7 @@
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
-      "pnpm lint",
+      "eslint packages --fix --ext .ts,.tsx,.vue,.js,.jsx",
       "prettier --write",
       "git add"
     ]
