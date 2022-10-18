@@ -11,7 +11,7 @@
     "changeset": "changeset",
     "changeset-version": "changeset version",
     "prepare": "husky install",
-    "lint": "eslint packages --fix --ext .ts,.tsx,.vue,.js,.jsx"
+    "lint": "stylelint \"**/*.{css,scss,sass}\""
   },
   "dependencies": {
     "react": "^18.2.0",
