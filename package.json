@@ -10,7 +10,8 @@
     "clear": "rimraf 'packages/*/{lib,node_modules}' && rimraf node_modules",
     "changeset": "changeset",
     "changeset-version": "changeset version",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "lint": "eslint packages --fix --ext .ts,.tsx,.vue,.js,.jsx"
   },
   "dependencies": {
     "react": "^18.2.0",
