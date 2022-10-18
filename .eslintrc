@@ -22,7 +22,6 @@
   "plugins": ["react", "@typescript-eslint", "prettier"],
   "rules": {
     "@typescript-eslint/no-explicit-any": ["off", { "ignoreRestArgs": false }],
-    "@typescript-eslint/no-var-requires": 0,
-    "@typescript-eslint/no-unused-vars": 1
+    "@typescript-eslint/no-var-requires": 0
   }
 }
